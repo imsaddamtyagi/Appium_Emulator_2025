@@ -18,9 +18,8 @@ import java.time.Duration;
 public class AppiumEmulatorTest
 {
     AppiumDriver driver;
- 	String apkPath = System.getProperty("user.dir") + "\\TestApk\\Demo.apk";
-	String Name =   "new UiSelector().resourceId(\"com.bitbar.testdroid:id/editText1\")";
-	String Answer = "new UiSelector().resourceId(\"com.bitbar.testdroid:id/button1\")";
+ 	String apkPath = System.getProperty("user.dir") + "\\TestApk\\app-debug.apk"; 
+	String GitLink =   "new UiSelector().description(\"Visit My GitHub Profile\")";
 
 
 
@@ -52,11 +51,11 @@ public class AppiumEmulatorTest
 
     
     @Test
-    public void MyFirstTest_Appium()
+    public void MyFirstTest_Appium() throws InterruptedException
     {
    	 
-   	 doSend(driver,Name,"Husain Tyagi");
-   	 doClick(driver,Answer);
+    Thread.sleep(10000);
+   	 doClick(driver,GitLink);
       
    
    	 }
