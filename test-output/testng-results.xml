@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-26T23:37:50 IST" name="Default suite" finished-at="2025-03-26T23:38:07 IST" duration-ms="17488">
+  <suite started-at="2026-01-16T22:51:34 IST" name="Default suite" finished-at="2026-01-16T22:51:56 IST" duration-ms="21905">
     <groups>
     </groups>
-    <test started-at="2025-03-26T23:37:50 IST" name="Default test" finished-at="2025-03-26T23:38:07 IST" duration-ms="17488">
+    <test started-at="2026-01-16T22:51:34 IST" name="Default test" finished-at="2026-01-16T22:51:56 IST" duration-ms="21905">
       <class name="com.qa.tests.AppiumEmulatorTest">
-        <test-method is-config="true" signature="AppiumSetUp()[pri:0, instance:com.qa.tests.AppiumEmulatorTest@4e50c791]" started-at="2025-03-26T23:37:50 IST" name="AppiumSetUp" finished-at="2025-03-26T23:38:02 IST" duration-ms="12871" status="PASS">
+        <test-method is-config="true" signature="AppiumSetUp()[pri:0, instance:com.qa.tests.AppiumEmulatorTest@79d8407f]" started-at="2026-01-16T22:51:34 IST" name="AppiumSetUp" finished-at="2026-01-16T22:51:44 IST" duration-ms="9331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AppiumSetUp -->
-        <test-method signature="MyFirstTest_Appium()[pri:0, instance:com.qa.tests.AppiumEmulatorTest@4e50c791]" started-at="2025-03-26T23:38:03 IST" name="MyFirstTest_Appium" finished-at="2025-03-26T23:38:07 IST" duration-ms="4530" status="PASS">
+        <test-method signature="MyFirstTest_Appium()[pri:0, instance:com.qa.tests.AppiumEmulatorTest@79d8407f]" started-at="2026-01-16T22:51:44 IST" name="MyFirstTest_Appium" finished-at="2026-01-16T22:51:56 IST" duration-ms="12490" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MyFirstTest_Appium -->
