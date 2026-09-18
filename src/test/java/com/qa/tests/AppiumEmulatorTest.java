@@ -16,11 +16,9 @@ import java.time.Duration;
 public class AppiumEmulatorTest
 {
     
- 	String apkPath     =   System.getProperty("user.dir") + "\\TestApk\\Demo.apk"; 
- 	
-	String GitLink     =   "new UiSelector().resourceId(\"com.bitbar.testdroid:id/editText1\")";
+ 	String apkPath     =    System.getProperty("user.dir") + "\\TestApk\\Demo.apk"; 	
+	String Name        =   "new UiSelector().resourceId(\"com.bitbar.testdroid:id/editText1\")";
 	String Answer      =   "new UiSelector().resourceId(\"com.bitbar.testdroid:id/button1\")";
-	String AnswerXpath =   "//android.widget.Button[@resource-id=\"com.bitbar.testdroid:id/button1\"]";
 
 	AppiumDriver driver;
 
@@ -32,17 +30,18 @@ public class AppiumEmulatorTest
 
         options.setApp(apkPath);      
         options.setPlatformName("Android");
-        options.setPlatformVersion("15");
+        options.setPlatformVersion("16");
         options.setAutomationName("UiAutomator2");
-        options.setDeviceName("Android Emulator");
+        options.setDeviceName("emulator-5554");
         options.setNoReset(true);  
-
-         
+     
         URI uri = new URI("http://127.0.0.1:4723");
         System.out.println("Launching Application now...");  
         
         long startTime = System.currentTimeMillis();
+        
         driver = new AndroidDriver(uri.toURL(), options);
+        
         long endTime = System.currentTimeMillis();
         double executionTimeInSeconds = (endTime - startTime) / 1000; // Divide by 1000 for seconds
         
@@ -53,9 +52,8 @@ public class AppiumEmulatorTest
     @Test
     public void MyFirstTest_Appium() throws InterruptedException
     { 	 
-    Thread.sleep(10000);
-    doSend(driver,GitLink,"Nokia");
-    doClickXpath(driver,AnswerXpath);    
+    doSend(driver,Name,"Nokia");
+    doClick(driver,Answer);    
    	 }
     
      
