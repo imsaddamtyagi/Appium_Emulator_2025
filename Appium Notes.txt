@@ -1,0 +1,59 @@
+npm install --location=global appium         (Latest stable version of Appium globally on your system.)
+npm install --location=global appium@latest  (To update to latest version)
+appium --version                             (3.7.0)  As on 12 Sep 2026
+npm install -g appium-doctor
+appium-doctor
+appium-doctor --version   (1.16.2)
+appium-doctor --android
+appium --allow-cors
+
+
+C:\Users\Abrah>where appium
+C:\nvm4w\nodejs\appium
+C:\nvm4w\nodejs\appium.cmd
+
+Appium Inspector: appium plugin install inspector   [To install appium inspector]
+appium --use-plugins=inspector   [Launch the Appium server with the plugin]
+http://127.0.0.1:4723/inspector  [Open in browser]
+------------------------------------------------------------------------------------------------------------------------
+adb devices
+adb usb
+adb tcpip 5555
+adb connect 192.168.1.3:5555 (If both laptop and android are on same wifi)
+From Android Device -> Wifi-> About this network-> IPv4 address)
+
+
+-------------------------------------------------------------------------------
+Emulator
+{
+  "platformName": "Android",
+  "appium:platformVersion": "16",
+  "appium:deviceName": "Android Emulator",
+  "appium:automationName": "UiAutomator2",
+  "appium:noReset": true,
+  "appium:app": "C://Users//Abrah//git//Appium_Emulator_2025//TestApk//Demo.apk"
+}
+---------------------------------------------------------------------------------------
+Real Device
+{
+  "platformName": "Android",
+  "appium:platformVersion": "16",
+  "appium:deviceName": "192.168.1.3:5555",
+  "appium:automationName": "UiAutomator2",
+  "appium:appPackage": "com.uptodown",
+  "appium:appActivity": "com.uptodown.activities.MainActivity",
+  "appium:noReset": true
+}
+------------------------------------------------------------------------------------
+ForPythonAppium
+{
+  "platformName": "Android",
+  "appium:deviceName": "Android Emulator",
+  "appium:platformVersion": "15",
+  "appium:automationName": "UiAutomator2",
+  "appium:noReset": true,
+  "appium:app": "C:\\Users\\Abrah\\android_automation_python\\Apk\\uptodown-org.wikipedia.apk",
+  "appium:appPackage": "com.uptodown",
+  "appium:appActivity": "com.uptodown.tv.ui.activity.TvMainActivity",
+  "appium:uiautomator2ServerLaunchTimeout": 120000
+}
