@@ -17,6 +17,9 @@ public class AppiumEmulatorTest
 {
     
  	String apkPath     =    System.getProperty("user.dir") + "\\TestApk\\Demo.apk"; 	
+ 	String RadioOne    =   "new UiSelector().resourceId(\"com.bitbar.testdroid:id/radio0\")";
+ 	String RadioTwo    =   "new UiSelector().resourceId(\"com.bitbar.testdroid:id/radio1\")";
+ 	String RadioThree  =   "new UiSelector().resourceId(\"com.bitbar.testdroid:id/radio2\")";
 	String Name        =   "new UiSelector().resourceId(\"com.bitbar.testdroid:id/editText1\")";
 	String Answer      =   "new UiSelector().resourceId(\"com.bitbar.testdroid:id/button1\")";
 
@@ -52,6 +55,11 @@ public class AppiumEmulatorTest
     @Test
     public void MyFirstTest_Appium() throws InterruptedException
     { 	 
+    doClick(driver,RadioOne);
+    doSend(driver,Name,"Apple");
+    doClick(driver,RadioTwo); 
+    doSend(driver,Name,"Samsung");
+    doClick(driver,RadioThree); 
     doSend(driver,Name,"Nokia");
     doClick(driver,Answer);    
    	 }
